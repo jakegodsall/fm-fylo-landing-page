@@ -19,7 +19,7 @@ const MainSection = (props) => {
                 colleagues for live collaboration. No email attachments
                 required.
             </p>
-            <TestemonialCarde />
+            <TestemonialCard />
         </div>
     );
 };
