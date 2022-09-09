@@ -4,12 +4,12 @@ import "./Form.css";
 
 const Form = (props) => {
     return (
-        <form class='form'>
+        <form className='form'>
             <input
                 className='form__input'
                 type='text'
                 placeholder={props.placeholder}
-                autocomplete='off'
+                autoComplete='off'
             />
             <button className='form__submit' type='submit'>
                 {props.buttonInnerText}
