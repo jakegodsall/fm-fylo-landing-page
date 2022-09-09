@@ -1,0 +1,23 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+    width: 80%;
+}
+
+.form__input,
+.form__submit {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.form__input {
+}
+
+.form__submit {
+    background-color: hsl(224, 93%, 58%);
+    color: #f8f8f8;
+    font-weight: 600;
+    border: none;
+    box-shadow: 0px 10px 5px -10px #4e4e4e;
+}

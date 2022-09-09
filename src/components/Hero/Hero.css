@@ -1,0 +1,23 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero__image {
+    width: 90vw;
+    margin-inline: auto;
+}
+
+.hero__title,
+.hero__text {
+    text-align: center;
+}
+
+.hero__title {
+    font-size: 1.7rem;
+}
+
+.hero__text {
+    margin-inline: 30px;
+    line-height: 1.4;
+}
