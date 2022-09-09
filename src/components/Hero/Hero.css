@@ -3,8 +3,9 @@
     flex-direction: column;
 }
 
+.hero__container,
 .hero__image {
-    width: 90vw;
+    width: min(90vw, 450px);
     margin-inline: auto;
 }
 
@@ -20,4 +21,38 @@
 .hero__text {
     margin-inline: 30px;
     line-height: 1.4;
+}
+
+@media screen and (min-width: 900px) {
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero__image {
+        max-width: 450px;
+        width: 100%;
+        order: 1;
+    }
+
+    .hero__container {
+        order: -1;
+        padding: 50px;
+    }
+
+    .hero__title,
+    .hero__text {
+        margin: 0;
+        text-align: left;
+        margin-bottom: 15px;
+    }
+
+    .hero__title {
+        line-height: 1.5;
+    }
+
+    .form {
+        flex-direction: row;
+        width: 100%;
+    }
 }
