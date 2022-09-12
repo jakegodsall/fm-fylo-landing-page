@@ -11,12 +11,12 @@ import AuthorAvatar from '../../assets/avatar-testimonial.jpg';
 const MainSection = props => {
 	return (
 		<div className='main-section__container'>
+			<img
+				className='main-section__image'
+				src={MainSectionImage}
+				alt='Three people painting on boards'
+			/>
 			<div className='main-section__text-content'>
-				<img
-					className='main-section__image'
-					src={MainSectionImage}
-					alt='Three people painting on boards'
-				/>
 				<h1 className='main-section__title'>
 					Stay productive, wherever you are
 				</h1>
@@ -40,14 +40,14 @@ const MainSection = props => {
 						/>
 					</p>
 				</a>
-			</div>
 
-			<TestimonialCard
-				mainText='Fylo has improved our team productivity by an order of magnitude. Since making the switch oyur team has become a well-oiled collaboration machine.'
-				authorAvatar={AuthorAvatar}
-				authorName='Kyle Burton'
-				authorPosition='Founder & CEO, Huddle'
-			/>
+				<TestimonialCard
+					mainText='Fylo has improved our team productivity by an order of magnitude. Since making the switch oyur team has become a well-oiled collaboration machine.'
+					authorAvatar={AuthorAvatar}
+					authorName='Kyle Burton'
+					authorPosition='Founder & CEO, Huddle'
+				/>
+			</div>
 		</div>
 	);
 };
