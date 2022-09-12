@@ -5,6 +5,7 @@ import Navbar from './components/Navbar/Navbar';
 import './App.css';
 import MainSection from './components/MainSection/MainSection';
 import AccessSection from './components/AccessSection/AccessSection';
+import ContactSection from './components/ContactSection/ContactSection';
 
 const App = () => {
 	return (
@@ -13,6 +14,7 @@ const App = () => {
 			<Hero />
 			<MainSection />
 			<AccessSection />
+			<ContactSection />
 		</div>
 	);
 };
