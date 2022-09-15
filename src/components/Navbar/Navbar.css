@@ -19,6 +19,7 @@
 
 .nav-item {
     padding-inline: 1.5rem;
+    color: hsl(238, 22%, 44%);
 }
 
 .hamburger {
