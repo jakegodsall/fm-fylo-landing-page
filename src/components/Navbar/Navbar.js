@@ -1,47 +1,37 @@
-import React, { useState } from "react";
+import styles from "./NavBar.module.css";
+
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 
-import Logo from "../../assets/logo.svg";
-
-import "./Navbar.css";
-
-const Navbar = () => {
-    const [hamburger, setHamburger] = useState(false);
-
+export default function NavBar({ setHamburger, hamburger }) {
     const hamburgerHandler = () => {
         setHamburger(!hamburger);
     };
 
     return (
-        <div className='nav-container'>
-            <a href='/'>
-                <img className='logo' src={Logo} alt='Fylo Logo' />
-            </a>
+        <nav className={styles.navbar}>
             <ul className={hamburger ? "nav active" : "nav"}>
-                <li className='nav-item'>
-                    <a href='/'>Features</a>
+                <li className="nav-item">
+                    <a href="/">Features</a>
                 </li>
-                <li className='nav-item'>
-                    <a href='/'>Team</a>
+                <li className="nav-item">
+                    <a href="/">Team</a>
                 </li>
-                <li className='nav-item'>
-                    <a href='/'>Sign In</a>
+                <li className="nav-item">
+                    <a href="/">Sign In</a>
                 </li>
             </ul>
             {hamburger ? (
                 <AiOutlineClose
-                    className='hamburger'
+                    className="hamburger"
                     onClick={hamburgerHandler}
                 />
             ) : (
                 <GiHamburgerMenu
-                    className='hamburger'
+                    className="hamburger"
                     onClick={hamburgerHandler}
                 />
             )}
-        </div>
+        </nav>
     );
-};
-
-export default Navbar;
+}
