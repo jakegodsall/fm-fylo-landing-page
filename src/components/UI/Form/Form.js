@@ -1,17 +1,17 @@
 import React from "react";
 
-import "./Form.css";
+import styles from "./Form.module.css";
 
 const Form = (props) => {
     return (
-        <form className='form'>
+        <form className={styles.form}>
             <input
-                className='form__input'
-                type='text'
+                className={styles.form__input}
+                type="text"
                 placeholder={props.placeholder}
-                autoComplete='off'
+                autoComplete="off"
             />
-            <button className='form__submit' type='submit'>
+            <button className={styles.form__submit} type="submit">
                 {props.buttonInnerText}
             </button>
         </form>

@@ -4,21 +4,28 @@ import NavBar from "../NavBar/NavBar";
 
 import Logo from "../../assets/logo.svg";
 
-import "./Header.css";
+import styles from "./Header.module.css";
 
 const Header = () => {
-    const [hamburger, setHamburger] = useState(false);
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(true);
 
-    const setHamburgerHandler = () => {
-        setHamburger(!hamburger);
+    const handleMobileMenu = () => {
+        setMobileMenuOpen((prevState) => !prevState);
     };
 
     return (
-        <header className="header">
+        <header className={styles.header}>
             <a href="/">
-                <img className="logo" src={Logo} alt="Fylo Logo" />
+                <img
+                    className={styles.header__logo}
+                    src={Logo}
+                    alt="Fylo Logo"
+                />
             </a>
-            <NavBar setHamburger={setHamburgerHandler} hamburger={hamburger} />
+            <NavBar
+                setMobileMenuOpen={handleMobileMenu}
+                mobileMenuOpen={mobileMenuOpen}
+            />
         </header>
     );
 };

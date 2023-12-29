@@ -3,32 +3,36 @@ import styles from "./NavBar.module.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 
-export default function NavBar({ setHamburger, hamburger }) {
+export default function NavBar({ mobileMenuOpen, setMobileMenuOpen }) {
     const hamburgerHandler = () => {
-        setHamburger(!hamburger);
+        setMobileMenuOpen();
     };
 
     return (
-        <nav className={styles.navbar}>
-            <ul className={hamburger ? "nav active" : "nav"}>
-                <li className="nav-item">
+        <nav className={styles.navBar}>
+            <ul
+                className={`${styles.navBar__desktop} ${
+                    mobileMenuOpen ? styles.active : ""
+                }`}
+            >
+                <li className={styles.navBar__item}>
                     <a href="/">Features</a>
                 </li>
-                <li className="nav-item">
+                <li className={styles.navBar__item}>
                     <a href="/">Team</a>
                 </li>
-                <li className="nav-item">
+                <li className={styles.navBar__item}>
                     <a href="/">Sign In</a>
                 </li>
             </ul>
-            {hamburger ? (
+            {mobileMenuOpen ? (
                 <AiOutlineClose
-                    className="hamburger"
+                    className={styles.navBar__hamburger}
                     onClick={hamburgerHandler}
                 />
             ) : (
                 <GiHamburgerMenu
-                    className="hamburger"
+                    className={styles.navBar__hamburger}
                     onClick={hamburgerHandler}
                 />
             )}
