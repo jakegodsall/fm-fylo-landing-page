@@ -1,14 +1,14 @@
 .main-container {
-	width: min(100%, 1200px);
-	margin-inline: auto;
+    width: min(100%, 1200px);
+    margin-inline: auto;
 }
 
 h1,
 h2 {
-	color: hsl(243, 87%, 12%);
+    color: hsl(243, 87%, 12%);
 }
 
 p {
-	color: hsl(238, 22%, 44%);
-	line-height: 1.3;
+    color: hsl(238, 22%, 44%);
+    line-height: 1.3;
 }

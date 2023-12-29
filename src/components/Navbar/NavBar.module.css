@@ -4,49 +4,9 @@
     align-items: center;
 }
 
-.navBar__desktop {
-    display: none;
-}
-
-.navbar__item {
-    padding-inline: 1.5rem;
-    color: hsl(238, 22%, 44%);
-}
-
 .navBar__hamburger {
+    position: relative;
     width: 1.5rem;
     height: 1.5rem;
+    z-index: 10;
 }
-
-/*  
-
-@media screen and (max-width: 600px) {
-    .navBar {
-        align-self: center;
-        top: 6rem;
-        left: -100%;
-        position: absolute;
-        text-align: center;
-        background-color: #f8f8f8;
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        transition: 0.4s;
-    }
-
-    .navBar.active {
-        left: 0px;
-    }
-
-    .navBar__item {
-        font-size: 2rem;
-        padding: 1rem;
-    }
-
-    .navBar__hamburger {
-        display: inline-block;
-        font-size: 2rem;
-    }
-} */

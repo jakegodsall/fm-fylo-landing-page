@@ -1,0 +1,37 @@
+.mobileMenu {
+}
+
+.mobileMenu__backdrop {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+}
+
+.mobileMenu__main {
+    background-color: #fff;
+    position: absolute;
+    width: 70%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10rem;
+    z-index: 10;
+}
+
+.mobileMenu__list {
+    display: flex;
+    flex-direction: column;
+    column-gap: 2.5rem;
+}
+
+.mobileMenu__item {
+    padding-inline: 1.5rem;
+    color: hsl(238, 22%, 44%);
+}
