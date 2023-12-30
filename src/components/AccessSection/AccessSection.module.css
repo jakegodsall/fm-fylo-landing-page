@@ -1,11 +1,10 @@
 .accessSection__container {
-    margin-top: 5rem;
     background-color: hsl(238, 22%, 44%);
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 3rem 0;
+    padding: 5.4rem 4.8rem 7.1rem;
 }
 
 .accessSection__textContent {
@@ -18,17 +17,19 @@
 }
 
 .accessSection__title {
-    padding-inline: 3rem;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1.6rem;
 }
 
 .accessSection__mainContent {
-    line-height: 1.7;
-    padding-inline: 3rem;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    margin-bottom: 2.4rem;
 }
 
 .accessSection__form {
-    width: 70%;
+    width: 100%;
 }
 
 @media screen and (min-width: 900px) {

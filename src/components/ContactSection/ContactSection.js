@@ -21,23 +21,23 @@ const ContactSection = () => {
             />
 
             <div className={styles.contactSection__grid}>
-                <div className={styles.contactSection__column1}>
+                <div className={styles.contactSection__column}>
                     <ul>
                         <a href="#">
-                            <li>
+                            <li className={styles.contactSection__contactItem}>
                                 <img src={PhoneIcon} alt="Phone Us" />
-                                Phone: +1-543-123-4567
+                                <p>Phone: +1-543-123-4567</p>
                             </li>
                         </a>
                         <a href="#">
-                            <li>
+                            <li className={styles.contactSection__contactItem}>
                                 <img src={EmailIcon} alt="Email Us" />
-                                example@fylo.com
+                                <p>example@fylo.com</p>
                             </li>
                         </a>
                     </ul>
                 </div>
-                <div className={styles.contactSection__column2}>
+                <div className={styles.contactSection__column}>
                     <ul>
                         <a href="#">
                             <li>About Us</li>
@@ -53,7 +53,7 @@ const ContactSection = () => {
                         </a>
                     </ul>
                 </div>
-                <div className={styles.contactSection__column3}>
+                <div className={styles.contactSection__column}>
                     <ul>
                         <a href="#">
                             <li>Contact Us</li>
@@ -66,15 +66,15 @@ const ContactSection = () => {
                         </a>
                     </ul>
                 </div>
-                <div className={styles.contactSection__column4}>
-                    <a href="https://facebook.com">
-                        <TiSocialFacebook className="fb" />
+                <div className={styles.contactSection__socialsSection}>
+                    <a href="https://facebook.com" className="fb">
+                        <TiSocialFacebook />
                     </a>
-                    <a href="https://twitter.com">
-                        <TiSocialTwitter className="twitter" />
+                    <a href="https://twitter.com" className="twitter">
+                        <TiSocialTwitter />
                     </a>
-                    <a href="https://instagram.com">
-                        <TiSocialInstagram className="instagram" />
+                    <a href="https://instagram.com" className="instagram">
+                        <TiSocialInstagram />
                     </a>
                 </div>
             </div>

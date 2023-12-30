@@ -7,8 +7,3 @@ h1,
 h2 {
     color: hsl(243, 87%, 12%);
 }
-
-p {
-    color: hsl(238, 22%, 44%);
-    line-height: 1.3;
-}

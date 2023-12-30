@@ -30,25 +30,23 @@ const MainSection = () => {
                     colleagues for live collaboration. No email attachments
                     required.
                 </p>
-
-                <a href="#">
-                    <p className={styles.mainSection__link}>
-                        See how Fylo works
-                        <img
-                            className={styles.mainSection__linkIcon}
-                            src={LinkIcon}
-                            alt="Arrow"
-                        />
-                    </p>
-                </a>
-
-                <TestimonialCard
-                    mainText="Fylo has improved our team productivity by an order of magnitude. Since making the switch oyur team has become a well-oiled collaboration machine."
-                    authorAvatar={AuthorAvatar}
-                    authorName="Kyle Burton"
-                    authorPosition="Founder & CEO, Huddle"
-                />
             </div>
+            <a href="#">
+                <p className={styles.mainSection__link}>
+                    See how Fylo works
+                    <img
+                        className={styles.mainSection__linkIcon}
+                        src={LinkIcon}
+                        alt="Arrow"
+                    />
+                </p>
+            </a>
+            <TestimonialCard
+                mainText="Fylo has improved our team productivity by an order of magnitude. Since making the switch oyur team has become a well-oiled collaboration machine."
+                authorAvatar={AuthorAvatar}
+                authorName="Kyle Burton"
+                authorPosition="Founder & CEO, Huddle"
+            />
         </div>
     );
 };

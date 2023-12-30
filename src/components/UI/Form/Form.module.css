@@ -1,22 +1,28 @@
 .form {
     display: flex;
     flex-direction: column;
-    margin-inline: auto;
-    width: 80%;
+    margin-inline: 2rem;
+    gap: 1.6rem;
 }
 
 .form__input,
 .form__submit {
-    padding: 1rem;
-    margin-bottom: 1remm;
+    padding: 1.2rem;
+}
+
+.form__input {
+    color: #c2c2c2;
+    font-size: 1.2rem;
+    letter-spacing: 0.03rem;
 }
 
 .form__submit {
     background-color: hsl(224, 93%, 58%);
-    color: #f8f8f8;
-    font-weight: 600;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 700;
     border: none;
-    box-shadow: 0rem 1rem 0.5rem -1rem #4e4e4e;
+    box-shadow: 0.2rem 0.3rem 0.6rem rgba(0, 0, 0, 0.16);
     transition: filter 0.5s ease-in-out;
 }
 

@@ -7,7 +7,7 @@ import Logo from "../../assets/logo.svg";
 import styles from "./Header.module.css";
 
 const Header = () => {
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(true);
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     const handleMobileMenu = () => {
         setMobileMenuOpen((prevState) => !prevState);

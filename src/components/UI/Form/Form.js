@@ -3,6 +3,10 @@ import React from "react";
 import styles from "./Form.module.css";
 
 const Form = (props) => {
+    function onClickHandler(event) {
+        event.preventDefault();
+    }
+
     return (
         <form className={styles.form}>
             <input
@@ -11,7 +15,11 @@ const Form = (props) => {
                 placeholder={props.placeholder}
                 autoComplete="off"
             />
-            <button className={styles.form__submit} type="submit">
+            <button
+                className={styles.form__submit}
+                type="submit"
+                onClick={onClickHandler}
+            >
                 {props.buttonInnerText}
             </button>
         </form>

@@ -1,25 +1,37 @@
 .mainSection__container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 2rem;
-    margin-top: 10rem;
+    padding-bottom: 9rem;
+    background-color: #f8f8fe;
 }
 
 .mainSection__textContent {
     display: flex;
     flex-direction: column;
+    text-align: center;
     align-items: center;
     flex: 1;
+    gap: 1.6rem;
+    margin-bottom: 3.6rem;
 }
 
 .mainSection__image {
-    width: min(90vw, 45rem);
-    margin-inline: auto;
+    width: min(85vw, 45rem);
     flex: 1;
+    margin-bottom: 9rem;
 }
 
 .mainSection__title {
     text-align: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+}
+
+.mainSection__textContent p {
+    font-size: 1.4rem;
 }
 
 .mainSection__link {
@@ -28,6 +40,8 @@
     color: hsl(170, 45%, 43%);
     border-bottom: 0.2rem solid hsl(170, 45%, 43%);
     padding-bottom: 0.3rem;
+    font-size: 1.2rem;
+    margin-bottom: 4.7rem;
 }
 
 .mainSection__linkIcon {
