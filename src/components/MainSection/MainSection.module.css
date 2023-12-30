@@ -13,7 +13,7 @@
 }
 
 .mainSection__image {
-    width: min(90vw, 450px);
+    width: min(90vw, 45rem);
     margin-inline: auto;
     flex: 1;
 }
@@ -26,8 +26,8 @@
     display: flex;
     align-items: center;
     color: hsl(170, 45%, 43%);
-    border-bottom: 2px solid hsl(170, 45%, 43%);
-    padding-bottom: 3px;
+    border-bottom: 0.2rem solid hsl(170, 45%, 43%);
+    padding-bottom: 0.3rem;
 }
 
 .mainSection__linkIcon {
@@ -42,7 +42,7 @@
 
 @media screen and (max-width: 900px) {
     .mainSection__container {
-        max-width: 450px;
+        max-width: 45rem;
         margin-inline: auto;
     }
 }
