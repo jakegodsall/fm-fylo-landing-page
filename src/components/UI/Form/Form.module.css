@@ -8,12 +8,15 @@
 .form__input,
 .form__submit {
     padding: 1.2rem;
+    border-radius: 0.5rem;
 }
 
 .form__input {
     color: #c2c2c2;
     font-size: 1.2rem;
     letter-spacing: 0.03rem;
+    border: 1px solid #07043b;
+    outline: none;
 }
 
 .form__submit {
@@ -31,12 +34,17 @@
 }
 
 @media screen and (min-width: 900px) {
+    .form {
+        margin: 0;
+        flex-direction: row;
+    }
+
     .form__input {
         width: 100%;
+        flex: 62;
     }
 
     .form__submit {
-        margin-left: 1rem;
-        width: 40%;
+        flex: 38;
     }
 }
