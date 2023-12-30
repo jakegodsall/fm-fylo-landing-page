@@ -1,3 +1,5 @@
+import { AnimatePresence } from "framer-motion";
+
 import styles from "./NavBar.module.css";
 
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -11,7 +13,11 @@ export default function NavBar({ mobileMenuOpen, setMobileMenuOpen }) {
 
     return (
         <nav className={styles.navBar}>
-            {mobileMenuOpen && <MobileMenu mobileMenuOpen={mobileMenuOpen} />}
+            <AnimatePresence>
+                {mobileMenuOpen && (
+                    <MobileMenu mobileMenuOpen={mobileMenuOpen} />
+                )}
+            </AnimatePresence>
 
             {mobileMenuOpen ? (
                 <AiOutlineClose
