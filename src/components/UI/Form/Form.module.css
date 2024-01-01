@@ -29,6 +29,12 @@
     transition: filter 0.5s ease-in-out;
 }
 
+.form__validationMessage {
+    color: red;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+}
+
 .form__submit:hover {
     filter: brightness(1.5);
 }
