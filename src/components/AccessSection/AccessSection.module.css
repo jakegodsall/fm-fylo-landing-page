@@ -12,17 +12,15 @@
     flex-direction: column;
 }
 
-.accessSection__container * {
-    color: hsl(240, 75%, 98%);
-}
-
 .accessSection__title {
+    color: hsl(240, 75%, 98%);
     font-size: 1.8rem;
     font-weight: 700;
     margin-bottom: 1.6rem;
 }
 
 .accessSection__mainContent {
+    color: hsl(240, 75%, 98%);
     font-size: 1.4rem;
     line-height: 2.1rem;
     margin-bottom: 2.4rem;
