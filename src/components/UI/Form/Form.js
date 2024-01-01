@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 import validateEmail from "../../../utils/validators";
 
@@ -30,7 +31,11 @@ const Form = (props) => {
         <>
             <form className={styles.form}>
                 <input
-                    className={styles.form__input}
+                    className={
+                        emailIsInvalid
+                            ? `${styles.form__input} ${styles.form__inputInvalid}`
+                            : styles.form__input
+                    }
                     type="text"
                     placeholder={props.placeholder}
                     autoComplete="off"
@@ -45,11 +50,21 @@ const Form = (props) => {
                     {props.buttonInnerText}
                 </button>
             </form>
-            {emailIsInvalid && (
-                <p className={styles.form__validationMessage}>
-                    Email address is invalid
-                </p>
-            )}
+            <div className={styles.form__validationContainer}>
+                <AnimatePresence>
+                    {emailIsInvalid && (
+                        <motion.p
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            transition={{ duration: 0.5 }}
+                            className={styles.form__validationMessage}
+                        >
+                            Email address is invalid
+                        </motion.p>
+                    )}
+                </AnimatePresence>
+            </div>
         </>
     );
 };
