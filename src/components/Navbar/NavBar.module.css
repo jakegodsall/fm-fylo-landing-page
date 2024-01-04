@@ -1,35 +1,36 @@
 .navBar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .navBar__desktopMenu {
-    display: none;
+  display: none;
 }
 
 .navBar__mobileMenu {
 }
 
 .navBar__hamburger {
-    position: relative;
-    width: 2.5rem;
-    height: 2.5rem;
-    z-index: 10;
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+  z-index: 10;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 640px) {
-    .navBar__desktopMenu {
-        display: flex;
-    }
+  .navBar__desktopMenu {
+    display: flex;
+  }
 
-    .navBar__desktopMenu ul {
-        display: flex;
-        gap: 5.8rem;
-        font-size: 1.6rem;
-    }
+  .navBar__desktopMenu ul {
+    display: flex;
+    gap: 5.8rem;
+    font-size: 1.6rem;
+  }
 
-    .navBar__mobileMenu {
-        display: none;
-    }
+  .navBar__mobileMenu {
+    display: none;
+  }
 }

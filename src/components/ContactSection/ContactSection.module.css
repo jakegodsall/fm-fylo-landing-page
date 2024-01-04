@@ -1,67 +1,70 @@
 .contactSection__container {
-    background-color: hsl(243, 87%, 12%);
-    padding: 6.5rem 3rem 4.2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 3.2rem;
-    font-size: 1.6rem;
-    color: hsl(0, 0%, 75%);
+  background-color: hsl(243, 87%, 12%);
+  padding: 6.5rem 3rem 4.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+  font-size: 1.6rem;
+  color: hsl(0, 0%, 75%);
 }
 
 .contactSection__logo {
-    filter: brightness(0) invert(1);
-    width: 10.5rem;
-    height: 3rem;
+  filter: brightness(0) invert(1);
+  width: 10.5rem;
+  height: 3rem;
 }
 
 .contactSection__grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-    gap: 3.2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 3.2rem;
+  max-width: 39rem;
 }
 
 .contactSection__column ul {
-    display: flex;
-    flex-direction: column;
-    gap: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
 }
 
 .contactSection__logo {
-    margin-right: 2rem;
+  margin-right: 2rem;
 }
 
 .contactSection__contactItem {
-    display: flex;
-    align-items: center;
-    gap: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
 }
 
 .contactSection__socialsSection {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .contactSection__socialsSection a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 0.1rem solid #fff;
-    border-radius: 50%;
-    width: 3rem;
-    height: 3rem;
-    padding: 0.3rem;
-    margin-right: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 0.1rem solid #fff;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  padding: 0.3rem;
+  margin-right: 0.6rem;
+  max-width: none;
 }
 
 @media screen and (max-width: 900px) {
-    .contactSection__grid {
-        grid-template-columns: 100%;
-    }
+  .contactSection__grid {
+    grid-template-columns: 100%;
+  }
 
-    .contactSection__socialsSection {
-        margin-inline: auto;
-    }
+  .contactSection__socialsSection {
+    margin-inline: auto;
+  }
 }
