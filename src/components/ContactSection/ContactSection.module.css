@@ -13,6 +13,8 @@
   filter: brightness(0) invert(1);
   width: 10.5rem;
   height: 3rem;
+  align-self: flex-start;
+  margin-left: 8rem;
 }
 
 .contactSection__grid {
@@ -20,7 +22,6 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   gap: 3.2rem;
-  max-width: 39rem;
 }
 
 .contactSection__column ul {
@@ -62,6 +63,7 @@
 @media screen and (max-width: 900px) {
   .contactSection__grid {
     grid-template-columns: 100%;
+    max-width: 39rem;
   }
 
   .contactSection__socialsSection {
