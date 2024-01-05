@@ -31,7 +31,7 @@ const MainSection = () => {
             for live collaboration. No email attachments required.
           </p>
         </div>
-        <a href="#" className={styles.mainSection__link}>
+        <a href="/" className={styles.mainSection__link}>
           <p>See how Fylo works</p>
           <img
             className={styles.mainSection__linkIcon}
