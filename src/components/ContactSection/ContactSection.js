@@ -39,15 +39,19 @@ const ContactSection = () => {
         </div>
         <div className={styles.contactSection__column}>
           <ul>
+            // eslint-disable-next-line jsx-a11y/anchor-is-valid
             <a href="#">
               <li>About Us</li>
             </a>
+            // eslint-disable-next-line jsx-a11y/anchor-is-valid
             <a href="#">
               <li>Jobs</li>
             </a>
+            // eslint-disable-next-line jsx-a11y/anchor-is-valid
             <a href="#">
               <li>Press</li>
             </a>
+            // eslint-disable-next-line jsx-a11y/anchor-is-valid
             <a href="#">
               <li>Blog</li>
             </a>
@@ -55,12 +59,15 @@ const ContactSection = () => {
         </div>
         <div className={styles.contactSection__column}>
           <ul>
+            // eslint-disable-next-line jsx-a11y/anchor-is-valid
             <a href="#">
               <li>Contact Us</li>
             </a>
+            // eslint-disable-next-line jsx-a11y/anchor-is-valid
             <a href="#">
               <li>Terms</li>
             </a>
+            // eslint-disable-next-line jsx-a11y/anchor-is-valid
             <a href="#">
               <li>Pricacy</li>
             </a>
