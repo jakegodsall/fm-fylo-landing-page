@@ -23,13 +23,13 @@ const ContactSection = () => {
       <div className={styles.contactSection__grid}>
         <div className={styles.contactSection__column}>
           <ul>
-            <a href="#">
+            <a href="/">
               <li className={styles.contactSection__contactItem}>
                 <img src={PhoneIcon} alt="Phone Us" />
                 <p>Phone: +1-543-123-4567</p>
               </li>
             </a>
-            <a href="#">
+            <a href="/">
               <li className={styles.contactSection__contactItem}>
                 <img src={EmailIcon} alt="Email Us" />
                 <p>example@fylo.com</p>
